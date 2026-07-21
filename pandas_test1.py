@@ -58,3 +58,10 @@ print(students_df, "\n")
 print(students_df.iloc[0], "\n")
 # 使用二維串列(陣列)的取值方式, 再搭配 iloc 取用 DataFrame 單一一格的值
 print(students_df.iloc[0, 2], "\n")
+
+# 用 loc 查詢資料
+# loc 是用(欄位的) name 去查詢
+students_df = students_df.set_index("姓名")
+print(students_df, "\n")
+print(students_df.loc["小杰"], "\n")
+print(students_df.loc["小杰", "數學"], "\n")
