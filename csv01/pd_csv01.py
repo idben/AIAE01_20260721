@@ -32,3 +32,10 @@ renamed_df = orders2_df.rename(columns={
 })
 
 print(renamed_df)
+print("-"*40, "\n")
+
+
+# 欄位的運算
+order_df["小計"] = order_df["數量"] * order_df["單價"]
+print(order_df, "\n")
+
