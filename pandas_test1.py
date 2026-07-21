@@ -86,3 +86,10 @@ print(orders_df.tail(1), "\n")
 # 輸出資料表摘要(summary)
 orders_df.info()
 print("\n")
+
+# describe
+# 產生數值摘要
+print(orders_df["數量"].describe())
+print("\n")
+print(orders_df[["數量", "單價"]].describe())
+print("\n")
