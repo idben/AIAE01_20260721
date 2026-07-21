@@ -52,3 +52,9 @@ print(students_df, "\n")
 # 練習 1: students_df 加上總分
 students_df["總分"] = students_df[["數學", "英文", "國文"]].sum(axis=1)
 print(students_df, "\n")
+
+# 用 iloc 查詢資料
+# 用數字(索引), 取出一整列的資料
+print(students_df.iloc[0], "\n")
+# 使用二維串列(陣列)的取值方式, 再搭配 iloc 取用 DataFrame 單一一格的值
+print(students_df.iloc[0, 2], "\n")
