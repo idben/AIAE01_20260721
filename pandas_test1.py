@@ -34,4 +34,12 @@ students_df = pd.DataFrame({
     "英文": [90, 76, 85, 91],
     "數學": [75, 92, 70, 89],
 })
-print(students_df)
+print(students_df, "\n")
+
+# 取用資料
+# 取用單一欄位
+print(students_df["數學"], "\n")
+# 取用複數欄位
+print(students_df[["數學", "英文", "國文"]], "\n")
+# 英文+人名在左
+print(students_df[["姓名", "英文"]], "\n")
