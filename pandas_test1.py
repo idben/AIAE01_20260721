@@ -79,3 +79,10 @@ print(orders_df, "\n")
 print(orders_df.head(3), "\n")
 # .tail() 後 5 筆資料，5 可以用參數帶入更換
 print(orders_df.tail(1), "\n")
+
+
+# info
+# 自帶 print
+# 輸出資料表摘要(summary)
+orders_df.info()
+print("\n")
