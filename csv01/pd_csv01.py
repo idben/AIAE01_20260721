@@ -70,3 +70,9 @@ filtered2_df = order_df[is_black_tea | is_price_45]
 print("是紅茶, 或是單價大於等於 45 元的訂單有")
 print(filtered2_df)
 print("-"*40, "\n")
+
+# 預設由小到大 ascending=True
+print(order_df.sort_values("數量", ascending=True), "\n")
+
+# 練習 2
+print(order_df[order_df["小計"] >= 80])
