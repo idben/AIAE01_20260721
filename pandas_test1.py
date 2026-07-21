@@ -48,3 +48,7 @@ print(students_df[["姓名", "英文"]], "\n")
 # axis=1(列)/0(欄)
 students_df["平均"] = students_df[["數學", "英文", "國文"]].mean(axis=1).round(1)
 print(students_df, "\n")
+
+# 練習 1: students_df 加上總分
+students_df["總分"] = students_df[["數學", "英文", "國文"]].sum(axis=1)
+print(students_df, "\n")
