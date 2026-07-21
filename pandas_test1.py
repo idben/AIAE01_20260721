@@ -65,3 +65,17 @@ students_df = students_df.set_index("姓名")
 print(students_df, "\n")
 print(students_df.loc["小杰"], "\n")
 print(students_df.loc["小杰", "數學"], "\n")
+
+
+# head()/tail()
+orders_df = pd.DataFrame({
+    "訂單編號": [101, 102, 103, 104, 105, 106, 107, 108],
+    "飲料": ["紅茶", "奶茶", "綠茶", "奶茶", "紅茶", "可可", "綠茶", "奶茶"],
+    "數量": [2, 1, 3, 2, 1, 2, 4, 1],
+    "單價": [30, 45, 35, 45, 30, 50, 35, 45],
+})
+print(orders_df, "\n")
+# .head() 前 5 筆資料，5 可以用參數帶入更換
+print(orders_df.head(3), "\n")
+# .tail() 後 5 筆資料，5 可以用參數帶入更換
+print(orders_df.tail(1), "\n")
