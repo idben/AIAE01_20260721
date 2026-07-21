@@ -93,3 +93,11 @@ print(orders_df["數量"].describe())
 print("\n")
 print(orders_df[["數量", "單價"]].describe())
 print("\n")
+
+
+orders_df["小計"] = orders_df["數量"] * orders_df["單價"]
+print(orders_df, "\n")
+
+
+# 練習 3
+print(f"訂單小計最高金額是 {orders_df["小計"].max()}")
