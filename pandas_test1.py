@@ -1,4 +1,6 @@
 import pandas as pd
+pd.set_option("display.unicode.east_asian_width", True)
+
 
 # series 的基本使用
 # 有標籤的一欄資料
@@ -23,3 +25,13 @@ print(f"最低分數是 {scores.min()}")
 mask = scores >= 80
 print(mask)
 print(scores[mask])
+print("-"*30, "\n")
+
+# DataFrame 的基本使用
+students_df = pd.DataFrame({
+    "姓名": ["小安", "小美", "小華", "小杰"],
+    "國文": [80, 88, 60, 95],
+    "英文": [90, 76, 85, 91],
+    "數學": [75, 92, 70, 89],
+})
+print(students_df)
