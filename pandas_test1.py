@@ -43,3 +43,8 @@ print(students_df["數學"], "\n")
 print(students_df[["數學", "英文", "國文"]], "\n")
 # 英文+人名在左
 print(students_df[["姓名", "英文"]], "\n")
+
+# 寫入資料
+# axis=1(列)/0(欄)
+students_df["平均"] = students_df[["數學", "英文", "國文"]].mean(axis=1).round(1)
+print(students_df, "\n")
